@@ -15,6 +15,22 @@
 
 
     console.log (`Заморозков зимой было ${frezy} дней`);
-    console.log (`Оттепели зимой было ${sunny} дней`);
+    console.log (`Оттепель зимой длилась ${sunny} дней`);
+
+
+    let frezyDay = 0;
+    let CountDay = winterDays[0];
+
+    for (let item of winterDays) {
+        if (winterDays [item] < 0 && winterDays [item+1] < 0) {CountDay = item;}
+    }
+
+    console.log (`${frezyDay} дней с отрицательной температурой`);
+
+
+
+
+
+
     
 
