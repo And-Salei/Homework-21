@@ -18,14 +18,17 @@
     console.log (`Оттепель зимой длилась ${sunny} дней`);
 
 
-       
+
+    let max = 0;
+    let counter;      
 
     for (let i = 0; i < winterDays.length - 1;  i++){
-        if (winterDays [i] < 0 && winterDays [i+1] < 0) {freezy++;}
-     else {sunny++;}}
-
-
-    console.log (`${freezy} дней с отрицательной температурой`);
+        if (winterDays [i] < 0) {counter++;}
+     else {if(counter > max) {max = counter;}
+    counter = 0;
+    }}
+    
+    console.log (`${max} дней с отрицательной температурой`);
    
 
 
